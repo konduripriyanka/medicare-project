@@ -1,0 +1,11 @@
+<h1 style="background-color:cornflowerblue; text-align: center; text-decoration-line:underline; "><i>Admin Login Section</i></h1>
+
+<form>
+  <table class="table table-striped">
+  <tr><td>Username:</td><td><input type="text" name="name" [(ngModel)]="name"></td></tr>
+  <tr><td>Password:</td><td><input type="email" name="email" [(ngModel)]="email"></td></tr>
+ <tr><td>
+<button type="submit" (click)="loginadNow()" class="btn btn-primary btn-lg">Login</button>
+ </td></tr>
+</table>
+  </form>

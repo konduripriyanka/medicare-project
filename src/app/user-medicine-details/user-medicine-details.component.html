@@ -1,0 +1,47 @@
+<h1>medicine List</h1>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th><i class="fa fa-id-card"></i>Id</th>
+            <th><i class="fa fa-user"></i>Name</th>
+            <th><i class="fa fa-pen"></i>Description</th>
+            <th><i class="fa fa-info-circle"></i>Category</th>
+            <th><i class="fa fa-rupee"></i>Price</th>
+            <th><i class="fa fa-eye"></i>Image</th>
+            <th><i class="fa fa-info-circle"></i>Details</th>
+            <th><i class="fa fa-eye"></i>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let m of medicines">
+            <td>{{m.id}}</td>
+            <td>{{m.name}}</td>
+            <td>{{m.description}}</td>
+          
+            <td>{{m.category}}</td>
+            <td>{{m.price}}</td>
+            <td><img src="./assets/cold.jpg" style="width: 100px; height: 100px;"></td>
+     
+            <td> <a href="/details/{{m.id}}"><button class="btn btn-primary"><i class="=fa-solid fa-eye"></i>View</button></a> </td>
+
+            <td><button type="button" class="btn btn-success" (click)="buynow();">Buy Now</button></td>
+            <td><button type="button" class="btn btn-primary" (click)="addtocart();">Add To Cart</button></td>
+        </tr>
+        <tr *ngFor="let m of medicines">
+            <td>{{m.id}}</td>
+            <td>{{m.name}}</td>
+            <td>{{m.description}}</td>
+          
+            <td>{{m.category}}</td>
+            <td>{{m.price}}</td>
+            <td><img src="./assets/paracetemol.jpg" style="width: 100px; height: 100px;"></td>
+     
+            <td> <a href="/details/{{m.id}}"><button class="btn btn-primary"><i class="=fa-solid fa-eye"></i>View</button></a> </td>
+
+            <td><button type="button" class="btn btn-success" (click)="buynow();">Buy Now</button></td>
+            <td><button type="button" class="btn btn-primary" (click)="addtocart();">Add To Cart</button></td>
+        </tr>
+    </tbody>
+</table>
+
